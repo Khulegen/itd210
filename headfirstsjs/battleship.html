@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Battleship</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Play battleship!</h1>
-    <script src="battleship.js"></script>
+<head>
+<meta charset="utf-8">
+<title>Battleship</title>
+<style>
+</style
+</head>
+<body>
+<h1>Play battleship!</h1>
+<script src="battleship.js"></script>
 var location1 = 3;
 var location2 = 4;
 var location3 = 5;
@@ -32,7 +34,11 @@ if (hits == 3) {
     isSunk = true;
     alert("You sank my battleship!");
 }
-var stats = "You took " + guesses + " guesses to sink the battleship, " +
+} else {
+   alert("MISS");
+}
+}
+var stats = "You took" + guesses + " guesses to sink the battleship, " +
                "which means your shootting accuracy was " + (3/guesses);
 alert(stats);
   </body>
